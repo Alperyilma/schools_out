@@ -33,6 +33,18 @@ public class MainApp {
         Person person2 = new Person("Ashley", "Carson", Gender.WOMAN);
         person1.setCourse(course1);
 
+        Person person3 = new Person("John", "Wick", Gender.MEN);
+        person1.setCourse(course1);
+
+        Person person4 = new Person("Ahmet", "Demir", Gender.MEN);
+        person1.setCourse(course1);
+
+        Person person5 = new Person();
+        person5.setFirstName("Mick");
+        person5.setFamilyName("James");
+        person5.setGender(Gender.MEN);
+        person5.setCourse(course1);
+
         User user = new User("login123","12345",true,person1);
 
         Module module = new Module("Microsoft Teams","Lessons will be op MS Teams",course1);
@@ -44,8 +56,11 @@ public class MainApp {
                 "\nof two steps in demonstrating you have the high-level skills needed to become a professional Java developer.");
         exam.setDate(LocalDate.now());
 
-        personDAO.addPerson(person1);
-        personDAO.addPerson(person2);
+//        personDAO.addPerson(person1);
+//        personDAO.addPerson(person2);
+//        personDAO.addPerson(person3);
+//        personDAO.addPerson(person5);
+
 
 
 

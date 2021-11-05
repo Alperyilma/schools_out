@@ -41,10 +41,12 @@ public class PersonDAO {
     }
 
     public void deletePerson(Person person){
-        EntityManager em = emf.createEntityManager ();
-        em.getTransaction ().begin ();
-        em.remove (em.find (Person.class,person.getId ()));
-        em.getTransaction ().commit ();
+        EntityManager em = emf.createEntityManager();
+        em.getTransaction().begin();
+        em.remove (em.find (Person.class,person.getId()));
+        em.getTransaction().commit ();
+
+
     }
 
 }
