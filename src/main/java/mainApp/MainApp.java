@@ -11,7 +11,6 @@ public class MainApp {
 
         CourseDAO courseDAO = new CourseDAO();
         ExamDAO examDAO = new ExamDAO();
-        GradeDAO gradeDAO = new GradeDAO();
         ModuleDAO moduleDAO = new ModuleDAO();
         PersonDAO personDAO = new PersonDAO();
         UserDAO userDAO = new UserDAO();
