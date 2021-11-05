@@ -17,8 +17,6 @@ public class MainApp {
         UserDAO userDAO = new UserDAO();
 
 
-
-
         Course course1 = new Course();
         course1.setName("Java IOT");
         course1.setDescription("Java-powered IoT devices are more effective in exchanging and retrieving information." +
@@ -29,27 +27,15 @@ public class MainApp {
         course1.setImageURL("/images/JavaIOT");
         course1.setActive(true);
 
-        Person person1 = new Person();
-        person1.setFirstName("Alper");
-        person1.setFamilyName("Yilmaz");
-        person1.setGender(Gender.MEN);
+        Person person1 = new Person("Alper", "Yilmaz", Gender.MEN);
         person1.setCourse(course1);
 
-        Person person2 = new Person();
-        person1.setFirstName("Ashley");
-        person1.setFamilyName("Carson");
-        person1.setGender(Gender.WOMAN);
+        Person person2 = new Person("Ashley", "Carson", Gender.WOMAN);
         person1.setCourse(course1);
 
-        User user = new User();
-        user.setPasswordHash("12345");
-        user.setActive(true);
-        user.setPerson(person1);
+        User user = new User("login123","12345",true,person1);
 
-        Module module = new Module();
-        module.setName("Microsoft Teams");
-        module.setDescription("Lessons will be op MS Teams");
-        module.setCourse(course1);
+        Module module = new Module("Microsoft Teams","Lessons will be op MS Teams",course1);
 
         Exam exam = new Exam();
         exam.setName("OCA");
