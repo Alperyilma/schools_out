@@ -45,8 +45,5 @@ public class PersonDAO {
         em.getTransaction().begin();
         em.remove (em.find (Person.class,person.getId()));
         em.getTransaction().commit ();
-
-
     }
-
 }

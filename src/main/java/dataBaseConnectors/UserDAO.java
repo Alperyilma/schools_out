@@ -1,6 +1,5 @@
 package dataBaseConnectors;
 
-import model.Exam;
 import model.User;
 
 import javax.persistence.EntityManager;
@@ -36,9 +35,9 @@ public class UserDAO {
 
     public void updateUser(User user){
         EntityManager em = emf.createEntityManager ();
-        em.getTransaction ().begin ();
-        em.merge (user);
-        em.getTransaction ().commit ();
+        em.getTransaction().begin();
+        em.merge(user);
+        em.getTransaction().commit();
     }
 
     public void deleteUser(User user){
